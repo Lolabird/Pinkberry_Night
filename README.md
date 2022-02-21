@@ -1,5 +1,5 @@
 # Pinkberry_Night
-Dark template for dokuwiki scrollable tables with fixed headers and a sticky table of contents. Click the link below for a demo
+Dark template for dokuwiki with scrollable tables with fixed headers and sticky table of contents. Click the link below for a demo
 Welcome to the Pinkberry Night Template Demo!
 
 ![PinkberryNight](https://user-images.githubusercontent.com/89228316/155003993-ef9b6315-e0e9-4bde-b806-ca77615daabf.png)
