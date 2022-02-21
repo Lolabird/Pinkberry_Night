@@ -1,4 +1,3 @@
-base     starter
 author   Octavia Nichols
 email    octavia@octavianichols.com
 date     2021-02-19
