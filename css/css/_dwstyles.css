@@ -1,0 +1,56 @@
+/**
+ * 
+ * Provides additions and replacements for css styles imported from the Dokuwiki theme
+ * 
+ * @author Octavia Nichols <octavia@octavianichols.com>
+ * 
+ */
+
+.dokuwiki form.search div.no {
+  float: right;
+}
+#dokuwiki__header form.search {
+	display: inline;
+}
+
+.no .quickselect {
+  display: block;
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+
+input, textarea, button, select, optgroup, option, keygen, output, meter, progress {
+	background-color: __background_neu__;
+}
+
+#__top {
+	position:sticky;
+	bottom: 2em;
+	z-index: 999;
+	float: left;
+	background-color: __float_menus__ ;
+}
+
+a:link:active {
+	color: __cloud_tag__;
+}
+
+/*adds extra space above the extension manager lists (to clear space on under the search bar in "Search and Install"*/
+#extension__list ul.extensionList {
+	margin-top: 5em;
+}
+
+/*the following block should be left alone unless you plan on changing
+ * the elements around these styles.
+ */
+.dokuwiki table.diff .diff-addedline,
+.dokuwiki table.diff .diff-deletedline,
+dokuwiki table.diff td.diff-context,
+span.sizechange.negative, span.sizechange.positive {
+	color: black;
+}
+div.picker button.pickerbutton, div.picker button.toolbutton,
+div.toolbar.group > div#tool__bar.tool__bar > button.toolbutton {
+	background-color: #eee;
+}

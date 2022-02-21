@@ -1,0 +1,106 @@
+/**
+ * This file provides styles for the TOC (table of contents), the
+ * sitemap (?do=index) and backlinks (?do=backlink).
+ * 
+ * @author DokuWiki Team
+ * @author Octavia Nichols <octavia@octavianichols.com>
+ */
+
+/* toc
+********************************************************************/
+
+/* toc container */
+#dw__toc {
+    float: right;
+    margin: 0;
+    width: __toc_width__;
+    background-color: transparent;
+    color: inherit;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 2em;
+    overflow: auto;
+    max-height: 85vh;
+}
+[dir=rtl] #dw__toc {
+    float: left;
+}
+
+/*____________ toc header ____________*/
+
+.dokuwiki h3.toggle {
+    position: sticky;
+    position: -webkit-sticky; /* Safari */
+    top:0;
+    padding: .2em .5em;
+    font-weight: bold;
+    margin:0;
+    background-color: __header_footer__;
+    font-size: 1.3em;
+}
+
+.dokuwiki .toggle strong {
+    float: right;
+    margin: 0 .2em;
+}
+[dir=rtl] .dokuwiki .toggle strong {
+    float: left;
+}
+
+/*____________ toc list ____________*/
+
+#dw__toc > div {
+    padding: .2em .5em;
+}
+#dw__toc ul {
+    padding: 0;
+    margin: 0;
+}
+#dw__toc ul li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    line-height: 1.1;
+}
+#dw__toc ul li div.li {
+    padding: .15em 0;
+}
+#dw__toc ul ul {
+    padding-left: 1em;
+}
+[dir=rtl] #dw__toc ul ul {
+    padding-left: 0;
+    padding-right: 1em;
+}
+#dw__toc ul ul li {
+}
+#dw__toc ul li a {
+}
+
+/* in case of toc list jumping one level
+  (e.g. if heading level 3 follows directly after heading level 1) */
+#dw__toc ul li.clear {
+}
+
+
+/* sitemap (and backlinks)
+********************************************************************/
+
+.dokuwiki ul.idx {
+    padding-left: 0;
+}
+[dir=rtl] .dokuwiki ul.idx {
+    padding-right: 0;
+}
+.dokuwiki ul.idx li {
+    list-style-image: url(../../images/bullet.png);
+}
+.dokuwiki ul.idx li.open {
+    list-style-image: url(../../images/open.png);
+}
+.dokuwiki ul.idx li.closed {
+    list-style-image: url(../../images/closed.png);
+}
+[dir=rtl] .dokuwiki ul.idx li.closed {
+    list-style-image: url(../../images/closed-rtl.png);
+}

@@ -1,0 +1,40 @@
+
+/**************cloud***************/
+@import "../lib/plugins/cloud/style.less";
+
+.dokuwiki div.cloud a { 
+    padding: 0; 
+    margin: 0 1.5ex; 
+}
+
+@c0: __cloud_tag__;
+@c1: __cloud_tag__;
+@c2: __cloud_tag__;
+@d:  10%;
+
+
+
+/***************edittable*************/
+.handsontable th, .handsontable td{
+    background-color: __background_neu__;
+}
+
+/*also affects regular tables*/
+td.area.highlight {
+    background-color: __highlight__;
+}
+
+/*context menu*/
+.htContextMenu table tbody tr td {
+    background-color: __background_neu__;
+}
+.htContextMenu table tbody tr td.current, .htContextMenu table tbody tr td.zeroclipboard-is-hover {
+    background-color: __cloud_tag__;
+}
+.htContextMenu table tbody tr td.htDisabled {
+    color: #999;
+    background-color: __background_alt__;
+}
+.htContextMenu table tbody tr td.htDisabled:hover {
+	background-color: __header_hover__;
+}
