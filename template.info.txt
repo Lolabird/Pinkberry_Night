@@ -1,6 +1,6 @@
 author   Octavia Nichols
 email    octavia@octavianichols.com
-date     2021-02-21
+date     2022-02-21
 name     Pinkberry Night
 desc     Dark template with a pink twist. Includes a sticky toc and sticky table headers.
 url      https://pinkberry.octavianichols.com
